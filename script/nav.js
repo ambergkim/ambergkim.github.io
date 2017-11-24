@@ -1,9 +1,9 @@
 'use strict';
 
-var $drawer = $('#drawer');
 var $hamburger = $('.hamburger');
 var $cross = $('.cross');
-$('#drawer .project-info').hide();
+var $drawer = $('.drawer');
+
 $cross.hide();
 $drawer.hide();
 

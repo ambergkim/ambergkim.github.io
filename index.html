@@ -8,23 +8,35 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav>
+    <nav class="nav-mobile">
       <button class="hamburger">&#9776;</button>
       <button class="cross">&#735;</button>
       <img class="logo" src="img/amber-kim-logo.png" alt="amber kim logo" />
-      <ul id="drawer">
-        <li class="project-title">Desgn Worth</li>
-        <li class="project-title">Bus Mall</li>
-        <li class="project-title">Salmon Cookies</li>
+      <ul class="drawer">
+        <li>Desgn Worth</li>
+        <li>Bus Mall</li>
+        <li>Salmon Cookies</li>
       </ul>
     </nav>
-    <section>
+    <nav class="nav-desktop">
+      <img class="logo" src="img/amber-kim-logo.png" alt="amber kim logo" />
+      <ul class="nav-d-links">
+      </ul>
+    </nav>
+    <div class="bg-video-div">
+      <video loop muted autoplay poster="img/woman-typing.png" class="bg-video">
+          <source src="img/woman-typing.mp4" type="video/mp4">
+      </video>
+    </div>
+    <section class="main">
       <img class="avatar" src="img/amber-kim-circle.png" />
-      <h1>Amber Kim</h1>
-      <h2>Front End Web Developer</h2>
-      <a href="#projects"><button class="main-cta">See My Work</button></a>
+      <div class="mobile-only">
+        <h1>Amber Kim</h1>
+        <h2>Front End Web Developer</h2>
+        <a href="#projects"><button class="main-cta">See My Work</button></a>
+      </div>
     </section>
-    <section>
+    <section class="mobile-only">
       <h1>Projects</h1>
       <div id="projects">
         <h2 class="project-title"><i class="fa fa-angle-down" aria-hidden="true"></i>Desgn Worth</h2>
@@ -47,12 +59,15 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="mobile-only">
       <h1>About Me</h1>
       <p>I am passionate about working with those who are passionate about helping people.</p>
     </section>
+    <section id="d-projects">
+    </section>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="script/projects.js"></script>
+    <script type="text/javascript" src="script/projects-desktop.js"></script>
     <script type="text/javascript" src="script/nav.js"></script>
   </body>
 </html>
