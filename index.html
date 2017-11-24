@@ -1,1 +1,73 @@
-"Hello World."
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Amber Kim: Web Development Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="nav-mobile">
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+      <img class="logo" src="img/amber-kim-logo.png" alt="amber kim logo" />
+      <ul class="drawer">
+        <li>Desgn Worth</li>
+        <li>Bus Mall</li>
+        <li>Salmon Cookies</li>
+      </ul>
+    </nav>
+    <nav class="nav-desktop">
+      <img class="logo" src="img/amber-kim-logo.png" alt="amber kim logo" />
+      <ul class="nav-d-links">
+      </ul>
+    </nav>
+    <div class="bg-video-div">
+      <video loop muted autoplay poster="img/woman-typing.png" class="bg-video">
+          <source src="img/woman-typing.mp4" type="video/mp4">
+      </video>
+    </div>
+    <section class="main">
+      <img class="avatar" src="img/amber-kim-circle.png" />
+      <div class="mobile-only">
+        <h1>Amber Kim</h1>
+        <h2>Front End Web Developer</h2>
+        <a href="#projects"><button class="main-cta">See My Work</button></a>
+      </div>
+    </section>
+    <section class="mobile-only">
+      <h1>Projects</h1>
+      <div id="projects">
+        <h2 class="project-title"><i class="fa fa-angle-down" aria-hidden="true"></i>Desgn Worth</h2>
+        <div class="project-info">
+          <small>Javascript, HTML, CSS, Flexbox, Mobile First, local storage</small>
+          <a href="https://amgranad.github.io/desgn-worth/" target="blank" rel="desgn worth project site"><img class="project-image" src="img/desgn-worth.gif"/></a>
+          <p>A mobile first website with an interactive form that takes in potential client information and displays an estimate or quote for web design projects.</p>
+        </div>
+        <h2 class="project-title"><i class="fa fa-angle-down" aria-hidden="true"></i>Bus Mall</h2>
+        <div class="project-info">
+          <small>Javascript, HTML, CSS, local storage, Chart.js</small>
+          <a href="https://amgranad.github.io/bus-mall/" target="_blank" rel="bus mall target site"><img class="project-image" src="img/bus-mall.png"/></a>
+          <p>A marketing tool that randomizes displaying of products without repeating a product twice in a row or within a set. Chart.js to display results.</p>
+        </div>
+        <h2 class="project-title"><i class="fa fa-angle-down" aria-hidden="true"></i>Salmon Cookies</h2>
+        <div class="project-info">
+          <small>Javascript, HTML, CSS</small>
+          <a href="https://amgranad.github.io/cookie-stand/" target="_blank" rel="cookie stand target site"><img class="project-image" src="img/salmon-cookies.jpg"/></a>
+          <p>A customer facing website with store infomration and a marketing tool that randomizes displaying of products without repeating a product twice in a row or within a set. Chart.js to display results for the business owner to review.</p>
+        </div>
+      </div>
+    </section>
+    <section class="mobile-only">
+      <h1>About Me</h1>
+      <p>I am passionate about working with those who are passionate about helping people.</p>
+    </section>
+    <section id="d-projects">
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="script/projects.js"></script>
+    <script type="text/javascript" src="script/projects-desktop.js"></script>
+    <script type="text/javascript" src="script/nav.js"></script>
+  </body>
+</html>
