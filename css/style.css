@@ -172,6 +172,13 @@ li {
   body {
     overflow: hidden;
   }
+  button {
+    color: #F8DE53;
+    background-color: #6C8130;
+    padding: 1em;
+    width: 40%;
+    margin: 0 2.5%;
+  }
   .nav-mobile {
     display: none;
   }
@@ -180,7 +187,7 @@ li {
     display: block;
     width: 20vw;
     height: 100vh;
-    padding: 4em 1.5em;
+    padding: 6em 1.5em 0;
   }
   .nav-desktop h1 {
     margin: 0 0.6em;
@@ -190,12 +197,20 @@ li {
     margin-left: 0.7em;
   }
   .nav-d-links li {
+    color: #F8DE53;
+    text-transform: uppercase;
+    font-size: 1.25em;
     border: none;
     margin: 0.5em 0;
   }
+  .fa {
+    color: #F8DE53;
+    font-size: 2em;
+    margin: 0.25em 0.3em;
+  }
   .logo {
-    left: 2.5%;
-    width: 100px;
+    left: 1.75%;
+    width: 150px;
   }
   .bg-video-div {
     display: block;
@@ -217,32 +232,39 @@ li {
   .avatar {
     position: fixed;
     top: 40%;
-    left: 19.5%;
+    left: 19.1%;
     width: 10%;
     z-index: 100;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
   }
   .mobile-only {
     display: none;
   }
   #d-projects {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 3%;
-    background-color: #F6F4E6;
     position: fixed;
-    top: 15%;
-    right: 5%;
-    width: 80vh;
+    top: 5%;
+    left: 35%;
+    width: 45vw;
+    height: 80vh;
     border: solid 1px white;
   }
+
+  #d-projects p, #d-projects small, #d-projects h2 {
+    color: white;
+    text-shadow: 2px 2px #000;
+  }
+
   #d-projects h1 {
     margin: 0;
     font-size: 2em;
-    color: black;
+    color: #F8DE53;
   }
   #d-projects img {
     margin-top: 0.5em;
     width: 100%;
-  }
-  #d-projects p {
-    color: black;
   }
 }
