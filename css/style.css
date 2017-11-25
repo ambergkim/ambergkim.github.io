@@ -76,6 +76,14 @@ li {
   padding: 0 0.2em 0;
 }
 
+.nav-mobile {
+  padding: 0;
+}
+
+.nav-mobile ul {
+  padding-top: 15%;
+}
+
 .drawer li {
   padding: 0.5em 1em;
   font-size: 1.5em;
@@ -126,6 +134,10 @@ li {
   margin: 0 0.5em;
 }
 
+#d-projects {
+  display: none;
+}
+
 #drawer {
   overflow: scroll;
 }
@@ -154,6 +166,12 @@ li {
     left: 0;
     padding: 0 0.2em 0;
   }
+  .nav-mobile ul {
+    padding-top: 0;
+  }
+  .nav-mobile li {
+    padding: 0.3em 0;
+  }
   .avatar {
     width: 30%;
   }
@@ -165,7 +183,7 @@ li {
     overflow: scroll;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1050px) {
   * {
     font-size: 20px;
   }
@@ -224,10 +242,10 @@ li {
   }
   .bg-video {
     position: absolute;
-    top: -10%;
+    top: -15%;
     left: -5%;
-    width: 120%;
-    height: 120%;
+    width: 130%;
+    height: 130%;
   }
   .avatar {
     position: fixed;
@@ -242,6 +260,7 @@ li {
     display: none;
   }
   #d-projects {
+    display: block;
     background-color: black;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 3%;
