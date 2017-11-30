@@ -93,6 +93,10 @@ li {
   display: none;
 }
 
+.desktop-only {
+  display: none;
+}
+
 .main-cta {
   color: black;
   background: #f6f4e6;
@@ -134,15 +138,11 @@ li {
   margin: 0 0.5em;
 }
 
-#d-projects {
-  display: none;
-}
-
 #drawer {
   overflow: scroll;
 }
 
-@media screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) {
   * {
     font-size: 40px;
   }
@@ -183,7 +183,7 @@ li {
     overflow: scroll;
   }
 }
-@media screen and (min-width: 1050px) {
+@media only screen and (min-width: 1050px) {
   * {
     font-size: 20px;
   }
@@ -259,8 +259,10 @@ li {
   .mobile-only {
     display: none;
   }
-  #d-projects {
+  .desktop-only {
     display: block;
+  }
+  #d-projects {
     background-color: black;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 3%;
