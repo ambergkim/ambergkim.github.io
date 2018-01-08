@@ -10,8 +10,12 @@ body {
   background: #112503; /* For browsers that do not support gradients */
 }
 
-h1, h2, a, p, li, small {
+h1, h2, a, p, li {
   color: #f6f4e6;
+}
+
+small {
+  color: black;
 }
 
 h1, small {
