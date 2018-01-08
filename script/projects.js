@@ -7,10 +7,10 @@ function showHideProject(e) {
     var $nextSibling = $(e.target).next();
     var $siblings = $nextSibling.siblings('.project-info');
     if ($nextSibling.is(':hidden')) {
-      $nextSibling.show('slow');
-      $siblings.hide('slow');
+      $nextSibling.slideDown('slow');
+      $siblings.slideUp('slow');
     } else {
-      $nextSibling.hide('slow');
+      $nextSibling.slideUp('slow');
     }
 }
 
