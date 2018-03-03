@@ -1,5 +1,14 @@
 * {
-  font-size: 50px;
+  font-size: 60px;
+  font-family: 'Merriweather', serif;
+}
+
+:root {
+  --gray-dark: #636e73;
+  --peach: #f0c899;
+  --gray-light: #EFEFEF;
+  --green: #378670;
+  --green-dark: #0f2c22;
 }
 
 body {
@@ -7,11 +16,18 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  background: #112503; /* For browsers that do not support gradients */
+  background: white; 
+  padding: 0;
 }
 
-h1, h2, a, p, li {
-  color: #f6f4e6;
+header {
+  background-color: var(--gray-dark);
+  margin: 0;
+  text-align: center;
+}
+
+h2, a, p, li {
+  color: black;;
 }
 
 small {
@@ -23,8 +39,14 @@ h1, small {
 }
 
 h1 {
+  color: var(--peach);
   margin: 1em 5%;
   font-size: 1.55em;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+h2 {
+  color: var(--gray-light);
 }
 
 section {
@@ -47,68 +69,26 @@ li {
   padding: 1em 0;
 }
 
-.nav-mobile {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.75);
-  padding: 15% 0 10%;
-  z-index: 1;
-  position: fixed;
-  width: 100%;
+button {
+  font-size: 2em;
+  background-color: var(--green);
+  color: white;
+  border: solid 3px white;
+  padding: 0.5em 1.5em;
+  font-family: 'Archivo Narrow', sans-serif;
 }
 
-.drawer {
-  margin-left: 5%;
+.project {
+  border: solid 5px var(--green-dark);
+}
+
+.section-dark {
+  background-color: var(--gray-dark);
 }
 
 .logo {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 350px;
-}
-
-.hamburger {
-  font-size: 125px;
-  color: #f6f4e6;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 0.25em;
-}
-
-.cross {
-  font-size: 250px;
-  color: #f6f4e6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0 0.2em 0;
-}
-
-.nav-mobile ul {
-  padding-top: 15%;
-}
-
-.project-title {
-  text-align: left;
-  border: solid 1px white;
-  padding: 0.5em 5%;
   margin: 0 auto;
-}
-
-.project-info {
-  background-color: #f6f4e6;
-  padding: 5% 5%;
-  width: 90%;
-}
-
-.project-info p {
-  color: black;
-}
-
-.project-image {
-  width: 100%;
-  border: solid 3px #112503;
+  width: 20%;
 }
 
 .fa {
@@ -127,32 +107,5 @@ li {
   body {
     display: flex;
     flex-direction: row;
-  }
-  section {
-    margin: 0 auto;
-    flex-basis: 70%;
-  }
-  .logo {
-    width: 150px;
-  }
-  .hamburger {
-    font-size: 40px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 0.25em;
-    background: none;
-    border: none;
-  }
-  .cross {
-    font-size: 100px;
-    background: none;
-    border: none;
-  }
-  .nav-mobile {
-    padding: 0;
-  }
-  .nav-mobile ul {
-    padding-top: 5%;
   }
 }
