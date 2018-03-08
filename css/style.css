@@ -1,5 +1,15 @@
 * {
-  font-size: 50px;
+  font-size: 40px;
+  font-family: 'Merriweather', serif;
+}
+
+:root {
+  --gray-dark: #636e73;
+  --peach: #f0c899;
+  --gray-light: #EFEFEF;
+  --green: #378670;
+  --green-dark: #0f2c22;
+  --green-overlay: rgba(15, 44, 34, 0.7);
 }
 
 body {
@@ -7,11 +17,22 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  background: #112503; /* For browsers that do not support gradients */
+  background: white; 
+  padding: 0;
 }
 
-h1, h2, a, p, li {
-  color: #f6f4e6;
+header {
+  background-color: var(--gray-dark);
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  padding: 20% 10% 30%;
+}
+
+h2, a, p, li {
+  color: black;;
 }
 
 small {
@@ -23,18 +44,34 @@ h1, small {
 }
 
 h1 {
-  margin: 1em 5%;
+  color: var(--peach);
+  margin: 1em 5% 3%;
   font-size: 1.55em;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 100;
+  text-align: left;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+h3 {
+  color: var(--gray-light);
+  margin-top: 5px;
+  font-weight: 100;
 }
 
 section {
-  padding: 10% 5%;
+  padding: 30% 10% 30%;
   text-align: center;
   flex-basis: 100%;
 }
 
 p {
-  text-align: justify;
+  text-align: center;
 }
 
 ul {
@@ -47,112 +84,138 @@ li {
   padding: 1em 0;
 }
 
-.nav-mobile {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.75);
-  padding: 15% 0 10%;
-  z-index: 1;
-  position: fixed;
-  width: 100%;
+button {
+  font-size: 2em;
+  background-color: var(--green);
+  color: white;
+  border: solid 10px white;
+  padding: 0.25em 1.5em;
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: 100;
 }
 
-.drawer {
-  margin-left: 5%;
+small {
+  color: var(--gray-light);
+  font-size: 0.6em;
 }
 
-.logo {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 350px;
+footer {
+  text-align: center;
+  padding: 1em;
 }
 
-.hamburger {
-  font-size: 125px;
-  color: #f6f4e6;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 0.25em;
-}
-
-.cross {
-  font-size: 250px;
-  color: #f6f4e6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0 0.2em 0;
-}
-
-.nav-mobile ul {
-  padding-top: 15%;
-}
-
-.project-title {
-  text-align: left;
-  border: solid 1px white;
-  padding: 0.5em 5%;
-  margin: 0 auto;
-}
-
-.project-info {
-  background-color: #f6f4e6;
-  padding: 5% 5%;
-  width: 90%;
-}
-
-.project-info p {
+footer small {
   color: black;
 }
 
-.project-image {
-  width: 100%;
-  border: solid 3px #112503;
+.project-sq {
+  width: 70%;
+  height: 650px;
+  padding: 5% 15%;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.fa {
-  margin: 0 0.5em;
+.project-sq a, p {
+  color: white;
+}
+
+.project-sq > a:active {
+  color: white;
+}
+
+.section-dark {
+  background-color: var(--gray-dark);
+}
+
+.section-dark p, a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 20%;
 }
 
 #avatar {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
 }
 
-@media screen and (min-width: 500px) {
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+}
+
+#project-avalanche {
+  background-image: url("../img/avalanche-square.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  border: solid 5px var(--green-dark);
+}
+
+#project-desgnworth {
+  background-image: url("../img/desgnworth-square.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  border: solid 5px var(--green-dark);
+}
+
+#about p {
+  text-align: left;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 800px) {
   * {
     font-size: 16px;
   }
-  body {
-    display: flex;
-    flex-direction: row;
-  }
   section {
-    margin: 0 auto;
-    flex-basis: 70%;
+    padding: 10% 10% 15%;
+  }
+  h1 {
+    color: var(--peach);
+    margin: 1em 5% 1%;
+    font-size: 1.55em;
+    font-family: 'Archivo Narrow', sans-serif;
+  }
+  button {
+    font-size: 1.5em;
+    border: solid 5px white;
+  }
+  .project-sq {
+    width: 180px;
+    height: 180px;
+    padding: 5%;
+    margin-bottom: 10%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .logo {
-    width: 150px;
+    margin: 0 auto;
+    width: 10%;
   }
-  .hamburger {
-    font-size: 40px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 0.25em;
-    background: none;
-    border: none;
+  #avatar {
+    width: 125px;
+    height: 125px;
   }
-  .cross {
-    font-size: 100px;
-    background: none;
-    border: none;
+  #projects {
+    flex-direction: row;
+    justify-content: flex-start;
   }
-  .nav-mobile {
-    padding: 0;
-  }
-  .nav-mobile ul {
-    padding-top: 5%;
+  #about p {
+    margin: 3% 20%;
   }
 }
+
