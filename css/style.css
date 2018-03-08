@@ -108,6 +108,13 @@ footer small {
   color: black;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+}
+
 .project-sq {
   width: 70%;
   height: 650px;
@@ -146,13 +153,6 @@ footer small {
   height: 200px;
 }
 
-#projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0;
-}
-
 #project-avalanche {
   background-image: url("../img/avalanche-square.png");
   background-repeat: no-repeat;
@@ -163,6 +163,14 @@ footer small {
 
 #project-desgnworth {
   background-image: url("../img/desgnworth-square.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  border: solid 5px var(--green-dark);
+}
+
+#project-fccr {
+  background-image: url("../img/project-square.png");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -191,6 +199,10 @@ footer small {
     font-size: 1.5em;
     border: solid 5px white;
   }
+  .projects {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
   .project-sq {
     width: 180px;
     height: 180px;
@@ -209,10 +221,6 @@ footer small {
   #avatar {
     width: 125px;
     height: 125px;
-  }
-  #projects {
-    flex-direction: row;
-    justify-content: flex-start;
   }
   #about p {
     margin: 3% 20%;
