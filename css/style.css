@@ -153,6 +153,14 @@ footer small {
   height: 200px;
 }
 
+#project-kidcast {
+  background-color: var(--green-dark);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  border: solid 5px var(--green-dark);
+}
+
 #project-avalanche {
   background-image: url("../img/avalanche-square.png");
   background-repeat: no-repeat;
