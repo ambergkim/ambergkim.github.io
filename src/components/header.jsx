@@ -13,7 +13,9 @@ class Header extends React.Component {
           <div className="cta-block">
             <h1>Full Stack JavaScript Developer</h1>
             <h3>Doer | Lifelong Learner</h3>
-            <button className="cta-btn">let's connect</button>
+            <a href="mailto:amber@amberkimdesign.com">
+              <button className="cta-btn">let's connect</button>
+            </a>
           </div>
         </div>
       </header>

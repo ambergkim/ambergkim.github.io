@@ -3,13 +3,14 @@
 //   WORD_RANDOM,
 // } from '../actions/word-card-actions.js';
 import uuidv1 from 'uuid/v1';
+import { PROJECTS_FILTER } from '../actions/projects-actions';
 
 const initialState = {
   projects: [
     {
       title: 'Amber Kim Portfolio',
       id: uuidv1(),
-      imageUrl: '/src/images/sightwords.png',
+      imageUrl: '/src/images/portfolio.png',
       demoUrl: 'https://ambergkim.github.io/',
       gitHubUrl: 'https://github.com/ambergkim/ambergkim.github.io',
       tags: ['react', 'redux', 'javascript', 'node', 'webpack', 'sass', 'frontend'],
@@ -66,10 +67,10 @@ export default function wordCardReducer(state, action) {
   }
 
   let newState = {};
-  // let currentWords;
-  // let newWord
 
   switch(action.type) {
+    case PROJECTS_FILTER:
+      return Object.assign(newState, state, {filter: action.value});
     default: return state;
   }
 }

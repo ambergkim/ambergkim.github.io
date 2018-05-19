@@ -14,16 +14,32 @@ class Projects extends React.Component {
   }
 
   displayProjects() {
-    console.log('props', this.props);
-    return this.props.projects.projects.map((project) => {
-      return <Project key={project.id} id={project.id} details={project}/>
-    });
+    console.log('filter', this.props.projects.filter);
+    let filter = this.props.projects.filter;
+    if (filter === '') {
+      return this.props.projects.projects.map(project => {
+        return <Project key={project.id} id={project.id} details={project}/>
+      });
+    } else {
+      let projectsCopy = this.props.projects.projects.slice();
+      let filteredProjects = projectsCopy.filter(project => {
+        let result = project.tags.indexOf(filter);
+        console.log('result', result);
+        if (result > -1) {
+          return project;
+        }
+      });
+      console.log('filteredProjects', filteredProjects);
+      return filteredProjects.map(project => {
+        return <Project key={project.id} id={project.id} details={project}/>
+      });
+    }
   }
 
   render() {
     return <section>
       <h2>projects</h2>
-      {/* <Filter /> */}
+      <Filter />
       <div className="projects-collection">
         {this.displayProjects()}
       </div>
@@ -37,7 +53,6 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = (dispatch, getState) => {
   return {
-    // expenseCreate: val => dispatch(expenseCreate(val)),
   }
 }
 

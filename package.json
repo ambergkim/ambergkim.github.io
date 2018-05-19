@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/ambergkim/ambergkim.github.io/issues"
   },
-  "homepage": "https://ambergkim.github.io/",
+  "homepage": "https://ambergkim.github.io/docs/",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
