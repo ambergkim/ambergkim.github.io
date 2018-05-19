@@ -1,0 +1,9 @@
+$screen-desktop-min: 1000px;
+
+.projects-collection {
+  @media (min-width: #{$screen-desktop-min}) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

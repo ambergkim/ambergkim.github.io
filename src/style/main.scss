@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow|Merriweather");
+
+$header-color: #F0C899;
+$dark-background-color: #636E73;
+$cta-color: #378670;
+$dark-border-color: #0F2C22;
+$project-link-color: #F0C899;
+
+$screen-desktop-min: 1000px;
+
+* {
+  font-size: 40px;
+
+  @media (min-width: #{$screen-desktop-min}) {
+    font-size: 12px;
+  }
+}
+
+section {
+  padding: 5%;
+}
+
+h1, h2, button {
+  font-family: 'Archivo Narrow';
+  font-size: 2.75em;
+}
+
+h1 {
+  color: $header-color;
+  font-weight: 100;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3, p {
+  font-family: 'Merriweather';
+}
+
+h3 {
+  color: white;
+  font-size: 1.75em;
+  font-weight: 100;
+}
+
+small {
+  font-size: 0.75em;
+}
+
+.cta-btn {
+  background-color: $cta-color;
+  border: solid 10px white;
+  padding: 0.5em 1em;
+  color: white;
+
+  @media (min-width: #{$screen-desktop-min}) {
+    font-size: 1.5em;
+    border: solid 3px white;
+  }
+}
