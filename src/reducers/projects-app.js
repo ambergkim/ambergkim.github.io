@@ -3,6 +3,7 @@
 //   WORD_RANDOM,
 // } from '../actions/word-card-actions.js';
 import uuidv1 from 'uuid/v1';
+import { PROJECTS_FILTER } from '../actions/projects-actions';
 
 const initialState = {
   projects: [
@@ -66,10 +67,10 @@ export default function wordCardReducer(state, action) {
   }
 
   let newState = {};
-  // let currentWords;
-  // let newWord
 
   switch(action.type) {
+    case PROJECTS_FILTER:
+      return Object.assign(newState, state, {filter: action.value});
     default: return state;
   }
 }
