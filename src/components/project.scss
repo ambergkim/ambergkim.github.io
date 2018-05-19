@@ -55,8 +55,14 @@ $screen-desktop-min: 1000px;
       }
     }
 
+    h4 {
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+
     p {
       font-size: 1.5em;
+      margin-top: 0.2em;
 
       @media (min-width: #{$screen-desktop-min}) {
         font-size: 1em;

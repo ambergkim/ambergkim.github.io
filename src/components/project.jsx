@@ -22,8 +22,10 @@ class Project extends React.Component {
       <div className="details">
         <h2 className="project-title">{this.props.details.title}</h2>
         <small>{this.displayTags()}</small>
-        <p>DESCRIPTION: {this.props.details.description}</p>
-        <p>CONTRIBUTION: {this.props.details.contribution}</p>
+        <h4>description</h4>
+        <p>{this.props.details.description}</p>
+        <h4>contribution</h4>
+        <p>{this.props.details.contribution}</p>
         <div className="project-links">
           <a href={this.props.details.demoUrl}>
             <button>Live Demo</button>

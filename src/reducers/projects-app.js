@@ -9,7 +9,7 @@ const initialState = {
     {
       title: 'Amber Kim Portfolio',
       id: uuidv1(),
-      imageUrl: '/src/images/sightwords.png',
+      imageUrl: '/src/images/portfolio.png',
       demoUrl: 'https://ambergkim.github.io/',
       gitHubUrl: 'https://github.com/ambergkim/ambergkim.github.io',
       tags: ['react', 'redux', 'javascript', 'node', 'webpack', 'sass', 'frontend'],
