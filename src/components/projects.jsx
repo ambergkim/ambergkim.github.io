@@ -23,7 +23,7 @@ class Projects extends React.Component {
   render() {
     return <section>
       <h2>projects</h2>
-      <Filter />
+      {/* <Filter /> */}
       <div className="projects-collection">
         {this.displayProjects()}
       </div>
