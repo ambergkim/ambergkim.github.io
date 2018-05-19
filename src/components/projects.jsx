@@ -24,7 +24,7 @@ class Projects extends React.Component {
     return <section>
       <h2>projects</h2>
       <Filter />
-      <div>
+      <div className="projects-collection">
         {this.displayProjects()}
       </div>
     </section>

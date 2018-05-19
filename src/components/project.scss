@@ -4,37 +4,94 @@ $cta-color: #378670;
 $dark-border-color: #0F2C22;
 $project-link-color: #F0C899;
 
+$screen-desktop-min: 1000px;
+
 .project {
   margin-top: 15%;
+
+  @media (min-width: #{$screen-desktop-min}) {
+    display: flex;
+    margin-top: 5%;
+    flex-grow: 1;
+    // flex-basis: 40%;
+    // margin-right: 5%;
+  }
 
   img {
     width: 100%;
     border: solid 10px $dark-border-color;
+
+    @media (min-width: #{$screen-desktop-min}) {
+     width: 200px;
+     height: 200px;
+     border: solid 5px $dark-border-color;
+    }
   }
 
   .details {
+
+    @media (min-width: #{$screen-desktop-min}) {
+      margin-left: 2.5%;
+    }
+
     .project-title {
       font-size: 2.25em;
       margin-top: 0.25em;
       margin-bottom: 0;
+
+      @media (min-width: #{$screen-desktop-min}) {
+        margin-top: 0;
+        font-size: 2em;
+        margin-bottom: 0;
+      }
     }
 
     small {
       font-size: 0.9em;
       text-transform: uppercase;
+
+      @media (min-width: #{$screen-desktop-min}) {
+        font-size: 1em;
+      }
+    }
+
+    p {
+      font-size: 1.5em;
+
+      @media (min-width: #{$screen-desktop-min}) {
+        font-size: 1em;
+      }
     }
 
     .project-links {
       display: flex;
       flex-direction: column;
 
-      button {
-        font-size: 2em;
-        background-color: $project-link-color;
-        border: solid 2px $dark-border-color;
-        width: 100%;
-        padding: 0.5em 1em;
-        margin-bottom: 3%;
+      @media (min-width: #{$screen-desktop-min}) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: space-between;
+      }
+
+      a {
+
+        @media (min-width: #{$screen-desktop-min}) {
+          margin-right: 2.5%;
+        }
+
+        button {
+          font-size: 2em;
+          background-color: $project-link-color;
+          border: solid 2px $dark-border-color;
+          width: 100%;
+          padding: 0.5em 1em;
+          margin-bottom: 3%;
+
+          @media (min-width: #{$screen-desktop-min}) {
+            padding: 0.1em 1em;
+            font-size: 1.5em;
+          }
+        }
       }
     }
   }

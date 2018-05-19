@@ -6,8 +6,14 @@ $cta-color: #378670;
 $dark-border-color: #0F2C22;
 $project-link-color: #F0C899;
 
+$screen-desktop-min: 1000px;
+
 * {
   font-size: 40px;
+
+  @media (min-width: #{$screen-desktop-min}) {
+    font-size: 12px;
+  }
 }
 
 section {
@@ -47,4 +53,9 @@ small {
   border: solid 10px white;
   padding: 0.5em 1em;
   color: white;
+
+  @media (min-width: #{$screen-desktop-min}) {
+    font-size: 1.5em;
+    border: solid 3px white;
+  }
 }
