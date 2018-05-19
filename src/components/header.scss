@@ -1,0 +1,35 @@
+header {
+  background-color: #636E73;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #logo {
+    width: 30%;
+    height: 30%;
+  }
+
+  #hero-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0 25%;
+
+    #avatar {
+      width: 40%;
+      height: 40%;
+    }
+
+    .cta-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 2%;
+      text-align: center;
+
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
