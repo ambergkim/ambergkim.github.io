@@ -37,8 +37,8 @@ header {
       height: 20%;
 
       @media (min-width: #{$screen-desktop-min}) {
-        width: 10%;
-        height: 10%;
+        width: 140px;
+        height: 140px;
       }
     }
 
@@ -50,6 +50,7 @@ header {
       text-align: center;
 
       @media (min-width: #{$screen-desktop-min}) {
+        text-align: left;
         align-items: flex-start;
         justify-content: flex-start;
       }
