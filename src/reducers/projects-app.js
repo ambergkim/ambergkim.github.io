@@ -33,7 +33,7 @@ const initialState = {
       imageUrl: '/src/images/kidcast.png',
       demoUrl: 'https://kidcast.herokuapp.com/api/media',
       gitHubUrl: 'https://github.com/kidcast/media',
-      tags: ['javascript', 'node', 'mongodb', 'heroku', 'travisci', 'awssdk', 'jasonwebtoken', 'rest', 'backend'],
+      tags: ['javascript', 'node', 'mongodb', 'heroku', 'travisci', 'aws', 'jasonwebtoken', 'rest', 'backend'],
       description: 'A YouTube-like Back End Node.js application designed to only display kid friendly content.',
       contribution: 'Produced & managed the entire project with the ability to keep the project timeline, meet MVP & stretch goals. Built the bulk of the code, resource RESTful API’s & wrote API tests while assisting teammates on their tasks through pair programming & code reviews.'
     },

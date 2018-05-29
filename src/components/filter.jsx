@@ -30,6 +30,7 @@ class Filter extends React.Component {
         <option value="redux">Redux</option>
         <option value="mongodb">MongoDB</option>
         <option value="postgresql">PostgreSQL</option>
+        <option value="aws">AWS</option>
         <option value="node">Node</option>
         <option value="sass">Sass</option>
       </select>
