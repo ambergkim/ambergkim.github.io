@@ -1,0 +1,30 @@
+$header-color: #F0C899;
+$dark-background-color: #636E73;
+$cta-color: #378670;
+$dark-border-color: #0F2C22;
+$project-link-color: #F0C899;
+
+$screen-desktop-min: 1000px;
+
+#about-section {
+  background-color: $dark-background-color;
+
+  color: #efefef;
+  font-weight: 100;
+
+  #about-links {
+    color: white;
+    font-size: 1.75em;
+
+    a {
+      color: white;
+      font-size: 1.1em;
+    }
+  }
+
+  p {
+    font-size: 1.5em;
+    color: #efefef;
+    line-height: 1.25;
+  }
+}
