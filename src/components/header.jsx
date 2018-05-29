@@ -16,6 +16,9 @@ class Header extends React.Component {
             <a href="mailto:amber@amberkimdesign.com">
               <button className="cta-btn">let's connect</button>
             </a>
+            <a id="about-link" href="#about-section">
+              about me
+            </a>
           </div>
         </div>
       </header>
