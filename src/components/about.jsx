@@ -9,7 +9,7 @@ class About extends React.Component {
     return <section id="about-section">
       <h1>About Me</h1>
       <div id="about-links">
-        <a href="mailto:amber@amberkimdesign.com">Email</a> | <a href="https://www.linkedin.com/in/ambergkim/">LinkedIn</a> | <a href="https://github.com/ambergkim">GitHub</a> | <a href="https://docs.google.com/document/d/18TJfPpLyXWLke-iZx0MA0V2IJn9cA8BvoQGr4VBfiu0/edit">Resume</a>
+        <a href="mailto:amber@amberkimdesign.com">Email</a> | <a href="https://www.linkedin.com/in/ambergkim/">LinkedIn</a> | <a href="https://github.com/ambergkim">GitHub</a> | <a href="https://docs.google.com/document/d/18TJfPpLyXWLke-iZx0MA0V2IJn9cA8BvoQGr4VBfiu0/edit?usp=sharing">Resume</a>
       </div>
       <p>
       I am a Software Developer with experience building both front-end and back-end applications, a background in Web Design as well as marketing and building businesses. My experience gives me a more holistic perspective on how I build applications.
