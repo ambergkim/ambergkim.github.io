@@ -51,8 +51,8 @@ const initialState = {
       title: 'FCC Redmond Website',
       id: uuidv1(),
       imageUrl: '/src/images/fccredmond.png',
-      demoUrl: 'http://teamavalanche.us/',
-      gitHubUrl: 'https://github.com/TeamAvalanche',
+      demoUrl: 'https://fcc-redmond.github.io/website-client/',
+      gitHubUrl: 'https://github.com/FCC-Redmond/',
       tags: ['javascript', 'node', 'mongodb', 'heroku', 'jquery', 'jasonwebtoken', 'frontend', 'backend', 'fullstack'],
       description: 'An ongoing Full Stack application with separate Client & Server that implements CRUD operations. Back End implements JWT while the Front End presents the filterable member information.',
       contribution: 'Instrumental in getting the project off the ground & moving from ideation, Planning, Project Management, Design, & Server & Client side code & architecture. Leader in code reviews & collaboration. Designed assignments to help new members learn HTML & CSS.'
