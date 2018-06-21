@@ -33,6 +33,7 @@ class Filter extends React.Component {
         <option value="aws">AWS</option>
         <option value="node">Node</option>
         <option value="sass">Sass</option>
+        <option value="socket.io">Socket.io</option>
       </select>
     </form>
   }

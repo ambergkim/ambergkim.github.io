@@ -8,6 +8,16 @@ import { PROJECTS_FILTER } from '../actions/projects-actions';
 const initialState = {
   projects: [
     {
+      title: 'QLaunch Questions',
+      id: uuidv1(),
+      imageUrl: '/src/images/qlaunch.jpg',
+      demoUrl: 'https://qlaunch.herokuapp.com/',
+      gitHubUrl: 'https://github.com/qlaunch/questions',
+      tags: ['react', 'socket.io', 'mongodb', 'javascript', 'node', 'webpack', 'sass', 'babel', 'frontend', 'backend'],
+      description: 'A live question polling application. Great for meetings, town halls... Anytime people want to ask questions.',
+      contribution: 'Responsible for project management, troubleshooting, writing both front end and back end code, tests, brand, styles, and documentation.'
+    },
+    {
       title: 'Amber Kim Portfolio',
       id: uuidv1(),
       imageUrl: '/src/images/portfolio.png',
