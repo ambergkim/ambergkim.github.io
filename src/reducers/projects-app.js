@@ -8,6 +8,16 @@ import { PROJECTS_FILTER } from '../actions/projects-actions';
 const initialState = {
   projects: [
     {
+      title: 'Pathfinder.vet',
+      id: uuidv1(),
+      imageUrl: '/src/images/pathfinder.png',
+      demoUrl: 'http://pathfinder.vet/',
+      gitHubUrl: 'https://github.com/pathfindertech',
+      tags: ['mongodb', 'javascript', 'node', 'webpack', 'frontend', 'backend', 'user experience', 'user interface', 'handlebars', 'html', 'css'],
+      description: 'Empowering veterans and families through sharing of information and experiences.',
+      contribution: 'Modernized user-facing interfaces through UI and brand redesign, streamlined customer traction through improved user experience and communicating company value through storytelling. Built new customer and admin facing features.'
+    },
+    {
       title: 'QLaunch Questions',
       id: uuidv1(),
       imageUrl: '/src/images/qlaunch.jpg',

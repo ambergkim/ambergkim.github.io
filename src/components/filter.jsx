@@ -34,6 +34,9 @@ class Filter extends React.Component {
         <option value="node">Node</option>
         <option value="sass">Sass</option>
         <option value="socket.io">Socket.io</option>
+        <option value="user experience">User Experience</option>
+        <option value="User Interface">User Interface</option>
+        <option value="handlebars">Handlebars</option>
       </select>
     </form>
   }
