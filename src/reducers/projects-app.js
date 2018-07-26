@@ -8,6 +8,16 @@ import { PROJECTS_FILTER } from '../actions/projects-actions';
 const initialState = {
   projects: [
     {
+      title: 'Nouri Meals',
+      id: uuidv1(),
+      imageUrl: '/src/images/nouri.png',
+      demoUrl: 'https://nourimeals.herokuapp.com/',
+      gitHubUrl: 'https://github.com/nourimeals/nouri',
+      tags: ['mongodb', 'javascript', 'node', 'frontend', 'backend', 'user experience', 'user interface', 'html', 'css', 'react', 'redux'],
+      description: 'In the fight to solve hunger in the Greater Seattle Area. A project began during AngelHack Seattle 2018.',
+      contribution: 'Ideation, team formation, planning, branding, wireframes & mockup design, architecture, project managemet, pair programming, presentation.'
+    },
+    {
       title: 'Pathfinder.vet',
       id: uuidv1(),
       imageUrl: '/src/images/pathfinder.png',

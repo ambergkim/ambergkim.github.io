@@ -1,5 +1,6 @@
 import React from 'react';
-import {connect} from 'react-redux';
+
+import FontAwesome from 'react-fontawesome';
 
 import './header.scss';
 
@@ -10,11 +11,21 @@ class Header extends React.Component {
         <nav class="header-nav">
           <img src="/src/images/amber-kim-logo.png" alt="Amber Kim Logo" id="logo"/>
           <div class="nav-links">
-            <a id="about-link" href="#about-section">A</a>
-            <a href="mailto:amber@amberkimdesign.com">E</a>
-            <a href="https://www.linkedin.com/in/ambergkim/">L</a>
-            <a href="https://github.com/ambergkim">G</a>
-            <a href="https://docs.google.com/document/d/18TJfPpLyXWLke-iZx0MA0V2IJn9cA8BvoQGr4VBfiu0/edit?usp=sharing">R</a>
+            <a id="about-link" href="#about-section">
+              <FontAwesome name="user" size="2x" />
+            </a>
+            <a href="mailto:amber@amberkimdesign.com">
+              <FontAwesome name="envelope" size="2x" />
+            </a>
+            <a href="https://www.linkedin.com/in/ambergkim/">
+              <FontAwesome name="users" size="2x" />
+            </a>
+            <a href="https://github.com/ambergkim">
+              <FontAwesome name="code" size="2x" />
+            </a>
+            <a href="https://docs.google.com/document/d/18TJfPpLyXWLke-iZx0MA0V2IJn9cA8BvoQGr4VBfiu0/edit?usp=sharing">
+              <FontAwesome name="file" size="2x" />
+            </a>
           </div>
         </nav>
         <div id="hero-block">
