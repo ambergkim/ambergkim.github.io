@@ -13,7 +13,7 @@ const initialState = {
       imageUrl: '/src/images/nouri.png',
       demoUrl: 'https://nourimeals.herokuapp.com/',
       gitHubUrl: 'https://github.com/nourimeals/nouri',
-      tags: ['mongodb', 'javascript', 'node', 'frontend', 'backend', 'user experience', 'user interface', 'html', 'css', 'react', 'redux'],
+      tags: ['mongodb', 'javascript', 'node', 'frontend', 'backend', 'user experience', 'user interface', 'html', 'css', 'react', 'redux', 'fullstack'],
       description: 'In the fight to solve hunger in the Greater Seattle Area. A project began during AngelHack Seattle 2018.',
       contribution: 'Ideation, team formation, planning, branding, wireframes & mockup design, architecture, project managemet, pair programming, presentation.'
     },
@@ -23,7 +23,7 @@ const initialState = {
       imageUrl: '/src/images/pathfinder.png',
       demoUrl: 'http://pathfinder.vet/',
       gitHubUrl: 'https://github.com/pathfindertech',
-      tags: ['mongodb', 'javascript', 'node', 'webpack', 'frontend', 'backend', 'user experience', 'user interface', 'handlebars', 'html', 'css'],
+      tags: ['mongodb', 'javascript', 'node', 'webpack', 'frontend', 'backend', 'user experience', 'user interface', 'handlebars', 'html', 'css', 'fullstack'],
       description: 'Empowering veterans and families through sharing of information and experiences.',
       contribution: 'Modernized user-facing interfaces through UI and brand redesign, streamlined customer traction through improved user experience and communicating company value through storytelling. Built new customer and admin facing features.'
     },
@@ -33,7 +33,7 @@ const initialState = {
       imageUrl: '/src/images/qlaunch.jpg',
       demoUrl: 'https://qlaunch.herokuapp.com/',
       gitHubUrl: 'https://github.com/qlaunch/questions',
-      tags: ['react', 'socket.io', 'mongodb', 'javascript', 'node', 'webpack', 'sass', 'babel', 'frontend', 'backend'],
+      tags: ['react', 'socket.io', 'mongodb', 'javascript', 'node', 'webpack', 'sass', 'babel', 'frontend', 'backend', 'fullstack'],
       description: 'A live question polling application. Great for meetings, town halls... Anytime people want to ask questions.',
       contribution: 'Responsible for project management, troubleshooting, writing both front end and back end code, tests, brand, styles, and documentation.'
     },
