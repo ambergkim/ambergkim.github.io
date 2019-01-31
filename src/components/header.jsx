@@ -3,6 +3,7 @@ import React from 'react';
 import FontAwesome from 'react-fontawesome';
 
 import './header.scss';
+import profilepic from '../images/amber-kim.jpg';
 
 class Header extends React.Component {
 
@@ -29,7 +30,7 @@ class Header extends React.Component {
           </div>
         </nav>
         <div id="hero-block">
-          <img src="/src/images/amber-kim-circle.png" alt="Amber Kim Avatar" id="avatar"/>
+          <img src={profilepic} alt="Amber Kim Avatar" id="avatar"/>
           <div className="cta-block">
             <h1>Software Developer</h1>
             <h3>Background in Web Design + Marketing</h3>
