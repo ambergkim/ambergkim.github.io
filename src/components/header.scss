@@ -69,6 +69,7 @@ header {
     #avatar {
       width: 45%;
       height: 45%;
+      border-radius: 50%;
 
       @media (min-width: #{$screen-desktop-min}) {
         width: 140px;
